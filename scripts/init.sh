@@ -3,8 +3,8 @@
 SRC_PATH=${1:-src/main}
 OUTPUT_PATH=${2:-dist/main}
 
-echo $SRC_PATH
-echo $OUTPUT_PATH
+printf "\nBuilding file at: $SRC_PATH"
+printf "\n\n"
 
 gcc -g $SRC_PATH -o $OUTPUT_PATH
 
