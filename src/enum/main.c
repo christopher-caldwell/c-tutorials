@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -9,8 +10,9 @@ int main()
   };
 
   enum gender myGender = male;
+  bool isGivenGenderMyGender = (myGender == male);
 
-  if (myGender == male)
+  if (isGivenGenderMyGender)
   {
     printf("%d", myGender);
   }
