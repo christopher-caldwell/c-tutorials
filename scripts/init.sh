@@ -7,7 +7,7 @@ printf "\nBuilding file at: $SRC_PATH"
 printf "\nExecutable will be written to: $OUTPUT_PATH"
 printf "\n\n"
 
-gcc -g $SRC_PATH -o $OUTPUT_PATH
+gcc -g src/$SRC_PATH -o $OUTPUT_PATH
 
 if [ $? != 0 ]; then
   exit 1
